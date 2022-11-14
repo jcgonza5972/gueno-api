@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "17e05339-285a-4338-952d-b2eb55db4ade",
+		"name": "gueno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10648706"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"tomas@gueno.com\",\n    \"password\": \"#Oso2022.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-gueno.dev.gueno.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"api-gueno",
+						"dev",
+						"gueno",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api-gueno.dev.gueno.com/api/client/clientConsumptions/tomas@gueno.com",
+					"protocol": "https",
+					"host": [
+						"api-gueno",
+						"dev",
+						"gueno",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"clientConsumptions",
+						"tomas@gueno.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createClients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRvbWFzQGd1ZW5vLmNvbSIsInNlcnZpY2VzIjpbImFtbGNvbXBseVYxIiwidmFsaWRhdGlvbnBob25lIiwidmFsaWRhdGlvbmlwIiwidmFsaWRhdGlvbmVtYWlsIiwidmFsaWRhdGlvbmJpbiIsImdvdkNoZWNrYXJnZW50aW5hIiwiZ292Q2hlY2ticmF6aWxWYWxpZGF0aW9uIiwiZ292Q2hlY2ticmF6aWwiLCJnb3ZDaGVja2JyYXppbExpZ2h0IiwiZ292Q2hlY2tydXRDaGlsZSIsImdvdkNoZWNrY2hpbGUiLCJnb3ZDaGVja2NvbG9tYmlhIiwiZ292Q2hlY2tjb3N0YVJpY2EiLCJnb3ZDaGVja2RvbWluaWNhbiIsImdvdkNoZWNrZWN1YWRvciIsImdvdkNoZWNraW5kb25lc2lhIiwiZ292Q2hlY2ttZXhpY28iLCJnb3ZDaGVja3BlcnUiLCJnb3ZDaGVja21leGljb0N1cnAiLCJnb3ZDaGVja21leGljb0lORSIsIm9uYm9hcmRpbmdpZGVudGl0eUNoZWNrIiwib25ib2FyZGluZ2RvY3VtZW50Q2hlY2siLCJvbmJvYXJkaW5naWRlbnRpdHlBbmREb2N1bWVudENoZWNrIiwib25ib2FyZGluZ2dldENoZWNrQnlJZCIsImt5dHZlcmlmeVRyYW5zYWN0aW9uIiwia3l0cmV0cmlldmVUcmFuc2FjdGlvbiIsImt5dGNyZWF0ZVRyYW5zYWN0aW9uRXZlbnQiLCJreXRjcmVhdGVDb25zdW1lclVzZXIiLCJreXRyZXRyaWV2ZUNvbnN1bWVyVXNlciIsImt5dGNyZWF0ZUJ1c2luZXNzVXNlciIsImt5dHJldHJpZXZlQnVzaW5lc3NVc2VyIiwia3l0cmV0cmlldmVBbGxDbGllbnRUcmFuc2FjdGlvbnMiLCJreXRyZXRyaWV2ZUFsbENsaWVudENvbnN1bWVyVXNlcnMiLCJreXRyZXRyaWV2ZUFsbENsaWVudEJ1c2luZXNzVXNlcnMiLCJreXRyZXRyaWV2ZUFsbENsaWVudFRyYW5zYWN0aW9uRXZlbnRzIiwia3l0c2F2ZUNyZWRlbnRpYWxzIiwia3l0cmV0cmlldmVDbGllbnRSdWxlcyIsImt5dHJldHJpZXZlQ2xpZW50UnVsZUJ5SWQiLCJreXRyZXRyaWV2ZUNsaWVudEluc3RhbmNlUnVsZXMiLCJreXRjcmVhdGVDbGllbnRJbnN0YW5jZVJ1bGUiLCJreXR1cGRhdGVDbGllbnRJbnN0YW5jZVJ1bGUiLCJreXRkZWxldGVDbGllbnRJbnN0YW5jZVJ1bGUiXSwia2V5IjoiNmhuSlF5ZUpMMklUajIzaFpIek5YeXhvMnd5bFNuU2tRYmIxcTVTT2I2cDZTTnVwV1Zjc3hyVkMyVzdBUlMwR25UeVJqMUpJcTZLbG5tQ1ZPWTk5VFRrTk9hWW5KcFVFajNPTkEiLCJpYXQiOjE2NjgyNzEzODgsImV4cCI6MTY2ODMwNzM4OH0.rxVw9kD3Jnt_v7vDkVT55lTj8TRlauwdkw8hgYkH178",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"email\": \"tomas@gueno.com\",\n \"service\": \"Jc3\",\n \"subservices\": [\"List\",\"strings\"],\n \"autoRenewal\": false,\n \"exceedLimit\": false,\n \"limit\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-gueno.dev.gueno.com/api/client/createClientService",
+					"protocol": "https",
+					"host": [
+						"api-gueno",
+						"dev",
+						"gueno",
+						"com"
+					],
+					"path": [
+						"api",
+						"client",
+						"createClientService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gueno-api/emails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3007/api/v1/clients/emails/tomas@gueno.com?dateStart=11-09-2022&dateEnd=11-11-2022",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"emails",
+						"tomas@gueno.com"
+					],
+					"query": [
+						{
+							"key": "dateStart",
+							"value": "11-09-2022"
+						},
+						{
+							"key": "dateEnd",
+							"value": "11-11-2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gueno-api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"tomas@gueno.com\",\n    \"password\": \"#Oso2022.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3007/api/v1/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gueno-api/createClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"email\": \"tomas@gueno.com\",\n \"service\": \"Jc4\",\n \"subservices\": [\"List\",\"strings\"],\n \"autoRenewal\": false,\n \"exceedLimit\": false,\n \"limit\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3007/api/v1/clients/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3007",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
