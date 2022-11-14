@@ -19,23 +19,27 @@ you need to install and run the following:
 
 -   gueno-api/login
 -   POST localhost:3007/api/v1/login
+    ´´´
     body:
     {
     "email": "tomas@gueno.com",
     "password": "#Oso2022."
     }
-
+    ´´´
 -   gueno-api/createClient
 -   POST localhost:3007/api/v1/clients/create
-    body:
-    {
-    "email": "tomas@gueno.com",
-    "service": "Jc4",
-    "subservices": ["List","strings"],
-    "autoRenewal": false,
-    "exceedLimit": false,
-    "limit": 10
-    }
+
+´´´
+body:
+{
+"email": "tomas@gueno.com",
+"service": "Jc4",
+"subservices": ["List","strings"],
+"autoRenewal": false,
+"exceedLimit": false,
+"limit": 10
+}
+´´´
 
 # lint project
 
