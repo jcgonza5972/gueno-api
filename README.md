@@ -9,42 +9,40 @@
 
 you need to install and run the following:
 
-npm install
-npm run start:dev
+-   npm install
+-   npm run start:dev
 
 # Test Endpoints (This documentation could be in swagger)
 
-gueno-api/emails
-GET localhost:3007/api/v1/clients/emails/tomas@gueno.com?dateStart=11-09-2022&dateEnd=11-11-2022
+-   gueno-api/emails
+-   GET localhost:3007/api/v1/clients/emails/tomas@gueno.com?dateStart=11-09-2022&dateEnd=11-11-2022
 
-gueno-api/login
-POST localhost:3007/api/v1/login
-body:
-{
-"email": "tomas@gueno.com",
-"password": "#Oso2022."
-}
+-   gueno-api/login
+-   POST localhost:3007/api/v1/login
+    body:
+    {
+    "email": "tomas@gueno.com",
+    "password": "#Oso2022."
+    }
 
-gueno-api/createClient
-POST localhost:3007/api/v1/clients/create
-body:
-{
-"email": "tomas@gueno.com",
-"service": "Jc4",
-"subservices": ["List","strings"],
-"autoRenewal": false,
-"exceedLimit": false,
-"limit": 10
-}
+-   gueno-api/createClient
+-   POST localhost:3007/api/v1/clients/create
+    body:
+    {
+    "email": "tomas@gueno.com",
+    "service": "Jc4",
+    "subservices": ["List","strings"],
+    "autoRenewal": false,
+    "exceedLimit": false,
+    "limit": 10
+    }
 
 # lint project
 
 To improve code readability and reduce bad practices, run the following commands
 
-´´´
-npm run lint
-npm run prettier-format
-´´´
+-   npm run lint
+-   npm run prettier-format
 
 # Pending Task
 
